@@ -1,0 +1,91 @@
+body {
+    text-align: center;
+	background: url('fundo.jpg') no-repeat;
+	background-size: cover;
+}
+
+button {
+	width: 100px;
+	height: 100px;
+	border-width: 2px;
+	border-color: black;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: grab;
+	background-color: gray;
+}
+
+button:active {
+	font-size: 36px;
+}
+
+p {
+    font-size: 28px;
+    font-weight: bold;
+	cursor: default;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo geral do container */
+#puzzle-container {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    position: relative;
+}
+
+/* Estilo dos botões/peças */
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    /*position: absolute;*/
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+    background-image: url('puzzle-allana.jpeg');
+    background-size: 400px 400px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Classes para cada posição da imagem */
+.piece-1 { background-position: 0% 0%; }
+.piece-2 { background-position: -100px 0%; }
+.piece-3 { background-position: -200px 0%; }
+.piece-4 { background-position: -300px 0%; }
+.piece-5 { background-position: 0% -100px; }
+.piece-6 { background-position: -100px -100px; }
+.piece-7 { background-position: -200px -100px; }
+.piece-8 { background-position: -300px -100px; }
+.piece-9 { background-position: 0% -200px; }
+.piece-10 { background-position: -100px -200px; }
+.piece-11 { background-position: -200px -200px; }
+.piece-12 { background-position: -300px -200px; }
+.piece-13 { background-position: 0% -300px; }
+.piece-14 { background-position: -100px -300px; }
+.piece-15 { background-position: -200px -300px; }
+.piece-16 { background-position: -300px -300px; }
+
+/* Posicionamento dos botões na grade 4x4 */
+#b0 { top: 0; left: 0; }
+#b1 { top: 0; left: 100px; }
+#b2 { top: 0; left: 200px; }
+#b3 { top: 0; left: 300px; }
+#b4 { top: 100px; left: 0; }
+#b5 { top: 100px; left: 100px; }
+#b6 { top: 100px; left: 200px; }
+#b7 { top: 100px; left: 300px; }
+#b8 { top: 200px; left: 0; }
+#b9 { top: 200px; left: 100px; }
+#b10 { top: 200px; left: 200px; }
+#b11 { top: 200px; left: 300px; }
+#b12 { top: 300px; left: 0; }
+#b13 { top: 300px; left: 100px; }
+#b14 { top: 300px; left: 200px; }
+#b15 { top: 300px; left: 300px; }
